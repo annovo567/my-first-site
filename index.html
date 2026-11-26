@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Цветочная лавка «Роза»</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Arial, sans-serif;
+        }
+
+        body {
+            background: #fdf6f9;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(135deg, #e91e63, #ff80ab);
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.1em;
+            opacity: 0.95;
+        }
+
+        .catalog {
+            max-width: 1100px;
+            margin: 50px auto;
+            padding: 0 20px;
+        }
+
+        .catalog h2 {
+            text-align: center;
+            color: #c2185b;
+            margin-bottom: 30px;
+            font-size: 1.8em;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(233, 30, 99, 0.15);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 30px rgba(233, 30, 99, 0.3);
+        }
+
+        .card .img {
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 80px;
+        }
+
+        .card:nth-child(1) .img { background: #ffe0e6; }
+        .card:nth-child(2) .img { background: #e8f5e9; }
+        .card:nth-child(3) .img { background: #fff3e0; }
+        .card:nth-child(4) .img { background: #f3e5f5; }
+
+        .card .info {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .card h3 {
+            color: #c2185b;
+            margin-bottom: 8px;
+        }
+
+        .card p {
+            color: #777;
+            font-size: 0.9em;
+            margin-bottom: 15px;
+        }
+
+        .card .price {
+            font-size: 1.4em;
+            font-weight: bold;
+            color: #e91e63;
+            margin-bottom: 15px;
+        }
+
+        .btn {
+            background: #e91e63;
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background: #c2185b;
+        }
+
+        footer {
+            background: #c2185b;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>🌸 Цветочная лавка «Роза»</h1>
+        <p>Свежие букеты с доставкой по городу</p>
+    </header>
+
+    <section class="catalog">
+        <h2>Наш каталог</h2>
+        <div class="cards">
+
+            <div class="card">
+                <div class="img">🌹</div>
+                <div class="info">
+                    <h3>Букет роз</h3>
+                    <p>15 алых роз — признание в любви</p>
+                    <div class="price">1 990 ₽</div>
+                    <button class="btn">Купить</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="img">🌷</div>
+                <div class="info">
+                    <h3>Тюльпаны</h3>
+                    <p>Весенний букет — 25 штук</p>
+                    <div class="price">1 290 ₽</div>
+                    <button class="btn">Купить</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="img">🌻</div>
+                <div class="info">
+                    <h3>Подсолнухи</h3>
+                    <p>Летнее настроение — 7 штук</p>
+                    <div class="price">990 ₽</div>
+                    <button class="btn">Купить</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="img">💐</div>
+                <div class="info">
+                    <h3>Авторский букет</h3>
+                    <p>Микс из сезонных цветов</p>
+                    <div class="price">2 490 ₽</div>
+                    <button class="btn">Купить</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 Цветочная лавка «Роза» · Тел: +7 (900) 123-45-67</p>
+    </footer>
+
+</body>
+</html>
